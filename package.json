@@ -1,0 +1,39 @@
+{
+  "name": "storagelookup",
+  "productName": "Storage Lookup",
+  "version": "1.0.0",
+  "description": "Lookup storage items (Movies, CD's, Photo albums, etc.)",
+  "homepage": "https://something.com",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -wl"
+  },
+  "author": {
+    "name": "Kasper Worm",
+    "email": "kasper@sylvestworm.dk"
+  },
+  "license": "ISC",
+  "build": {
+    "linux": {
+      "icon": "assets/icons/png/icon.png",
+      "target": [
+        "AppImage"
+      ]
+    },
+    "win": {
+      "target": "portable",
+      "icon": "assets/icons/win/icon.ico"
+    }
+  },
+  "dependencies": {
+    "nedb": "^1.8.0",
+    "skeleton-css": "^2.0.4"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.44.4",
+    "electron": "^5.0.4",
+    "electron-packager": "^14.0.0"
+  }
+}

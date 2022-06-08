@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add item</title>
+    <meta name="description" content="Locate storage items">
+    <meta name="author" content="Kasper Worm">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../node_modules/skeleton-css/css/normalize.css">
+    <link rel="stylesheet" href="../node_modules/skeleton-css/css/skeleton.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Add item</h1>
+            <form id="addItemForm" onsubmit="Javascript:addItemFromForm(event)">
+                <div>
+                    <label>Enter title</label>
+                    <input type="text" id="title" autofocus>
+                </div>
+                <div>
+                    <label>Enter location</label>
+                    <input type="text" id="location">
+                </div>
+                <button type="submit">Add item</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <script src='../renderer/addItem.js'></script>
+</footer>
+
+</html>
