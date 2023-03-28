@@ -96,7 +96,6 @@ function loadItems(items, event = false) {
     event.reply('pageload:reply', items);
 }
 
-
 //CRUD functions
 function getItemsFromDatabase(callback, extraParam = false, query = {}) {
     database.find(query, function (err, documents) {

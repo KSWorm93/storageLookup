@@ -6,9 +6,9 @@
   "homepage": "https://something.com",
   "main": "app.js",
   "scripts": {
-    "start": "electron .",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder -wl"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "author": {
     "name": "Kasper Worm",
@@ -28,12 +28,16 @@
     }
   },
   "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
     "nedb": "^1.8.0",
     "skeleton-css": "^2.0.4"
   },
   "devDependencies": {
-    "electron-builder": "^20.44.4",
-    "electron": "^5.0.4",
-    "electron-packager": "^14.0.0"
+    "@electron-forge/cli": "^6.0.5",
+    "@electron-forge/maker-deb": "^6.1.0",
+    "@electron-forge/maker-rpm": "^6.1.0",
+    "@electron-forge/maker-squirrel": "^6.0.5",
+    "@electron-forge/maker-zip": "^6.0.5",
+    "electron": "^5.0.13"
   }
 }
