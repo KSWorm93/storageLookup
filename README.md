@@ -19,5 +19,3 @@ It uses electon to make a desktop application
 Depending on what platform you are on, you will need different dependencies to execute the package and distribution commands
 
 Relevant files will be in the /out folder
-
-- Kasper
