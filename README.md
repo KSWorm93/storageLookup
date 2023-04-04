@@ -2,6 +2,8 @@
 A program used to make a quick lookup of items and where they are stored.
 It stores a file locally to act as your database.
 
+It was originally intended to be used to help orgaize a movie collection, and their physical location in the house, but can easily be used for other items, like books.
+
 ## Screenshots
 
 The "Welcome" screen, showing the data, and a way to search/filter the entries, as well as removing items.
@@ -9,6 +11,9 @@ The "Welcome" screen, showing the data, and a way to search/filter the entries, 
 
 The "Add Item" screen, with a simple form.
 ![Add Item](/screenshots/addItem.png)
+
+The "Info" screen, showing general info and usage of the program.
+![Info](/screenshots/info.png)
 
 ## Dependencies
 It uses electon to make a desktop application.
